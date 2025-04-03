@@ -30,7 +30,7 @@ frame = tk.Frame(root)  # Create a frame/container to hold the buttons
 frame.pack(pady=10)  # Add some space above and below the buttons
 
 col = 0  # Column index for grid layout
-for color in LED_PINS: # Creates a 'radio button' for each LED
+for colour in LED_PINS: # Creates a 'radio button' for each LED
     # Places buttons in a row, adjust spacing horizontally
     tk.Radiobutton(frame, text=colour, variable=led_var, value=colour, command=turn_on_led).grid(row=0, column=col, padx=10)
     col += 1  # Move to the next column
